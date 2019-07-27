@@ -7,33 +7,11 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
+    <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textSize="40dp" />
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/lostbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lost" />
-
-        <Button
-            android:id="@+id/foundbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Found" />
-
-
-    </LinearLayout>
-
+    </ListView>
 
 </LinearLayout>
