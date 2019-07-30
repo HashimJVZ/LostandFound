@@ -9,6 +9,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.lostandfound.model.CardData;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
@@ -31,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Clicked " + districts[i], Toast.LENGTH_SHORT).show();
             }
         });
+
+        List<CardData> list = new ArrayList<>();
+//        fi
+
+        CardAdapter cardAdapter = new CardAdapter(this, list);
 
     }
 }
