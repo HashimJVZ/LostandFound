@@ -35,7 +35,12 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Picasso.get().load(cardData.get(position).getImage()).into(holder.imageView);
+        try {
+            Picasso.get().load(cardData.get(position).getImage()).into(holder.imageView);
+        }
+        catch (Exception e){
+
+        }
         holder.title.setText(cardData.get(position).getTitle());
         holder.description.setText(cardData.get(position).getDescription());
     }
