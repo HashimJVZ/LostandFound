@@ -58,6 +58,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onResume();
 
         recyclerView.setAdapter(null);
+        cardAdapter = null;
 
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
 
